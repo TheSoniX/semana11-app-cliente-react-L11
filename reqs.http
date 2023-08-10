@@ -1,13 +1,15 @@
-@server = https://texai-crispy-enigma-j4q5xwg7735p95-8080.preview.app.github.dev
-@emp = {{server}}/api/employees
+@server = https://ubiquitous-chainsaw-vpwg7qw96jxhwrp-8080.app.github.dev/
 ###
-GET {{emp}}
+GET {{server}}api/instrumentos
 ###
-POST {{emp}}
+POST {{server}}api/instrumentos
 Content-Type: application/json
 
-{
-    "firstName": "Bilbo",
-    "lastName": "Baggins",
-    "description": "burglar"
-}
+{"nombre": "Quena", "categoria": "viento", "descripcion": "Como una flauta"}
+###   
+GET {{server}}api/musicos
+###
+POST {{server}}api/musicos
+Content-Type: application/json
+
+{"nombre": "Joaquin"}
